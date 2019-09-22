@@ -5,11 +5,11 @@ from pathlib import Path
 # ---------
 
 # local
-from app import app
+from andrewrosss_dev import app
 
 
 @app.route("/", defaults={"filename": "index.html"})
 @app.route("/<path:filename>")
 def docs_pipe_inputs(filename):
-    path = Path("docs") / "build" / "html" / filename
+    path = Path("pages") / filename
     return app.send_static_file(path)
