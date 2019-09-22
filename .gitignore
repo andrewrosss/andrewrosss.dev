@@ -1,4 +1,8 @@
 .vscode/
-app/static/docs/build/
+docs/build/
+andrewrosss_dev/static/pages/
 *__pycache__*
 TODO.md
+dist/
+build/
+*.egg-info
