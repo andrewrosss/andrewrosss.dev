@@ -1,0 +1,4 @@
+.vscode/
+docs/build/
+*__pycache__*
+TODO.md
