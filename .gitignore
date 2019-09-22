@@ -1,4 +1,4 @@
 .vscode/
-docs/build/
+app/static/docs/build/
 *__pycache__*
 TODO.md

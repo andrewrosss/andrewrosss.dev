@@ -67,7 +67,7 @@ html_context = sphinx_material.get_html_context()
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
-html_logo = '_static/images/laptop_icon.svg'
+html_logo = "_static/images/laptop_icon.svg"
 
 html_sidebars = {"**": ["globaltoc.html", "localtoc.html", "searchbox.html"]}
 
