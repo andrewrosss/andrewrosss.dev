@@ -1,0 +1,2 @@
+include versioneer.py
+include andrewrosss_dev/_version.py

@@ -13,9 +13,9 @@
 import os
 import sys
 import sphinx_material
-
 sys.path.insert(0, os.path.abspath("."))
 sys.path.insert(0, os.path.abspath("../.."))
+import andrewrosss_dev
 
 
 # -- Project information -----------------------------------------------------
@@ -25,7 +25,7 @@ copyright = "2019, Andrew Ross"
 author = "Andrew Ross"
 
 # The full release, including alpha/beta/rc tags
-release = "0.1.0"
+release = andrewrosss_dev.__version__
 
 
 # -- General configuration ---------------------------------------------------
