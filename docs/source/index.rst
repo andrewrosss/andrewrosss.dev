@@ -24,7 +24,7 @@ Ad exercitation est cillum sunt exercitation ut nisi commodo reprehenderit qui e
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Navigation
    :hidden:
 
    resume-cv

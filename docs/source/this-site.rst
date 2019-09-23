@@ -137,7 +137,7 @@ mega-tutorial, the notable changes being::
 
 Otherwise, it's all the same.
 
-Note that there is ``.flaskenv`` file that enables us to call::
+Note that there is a ``.flaskenv`` file that enables us to call::
 
   flask run
 
