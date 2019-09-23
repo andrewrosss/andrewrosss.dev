@@ -1,3 +1,3 @@
-# My Personal Website.
+# My Personal Website
 
-This houses the code used to generate [andrewrosss.dev](https://andrewrosss.dev)
+This repo houses the code used to generate [andrewrosss.dev](https://andrewrosss.dev)

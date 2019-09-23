@@ -22,7 +22,7 @@ The Root Makefile
    ``Makefile`` before doing anything.
 
 The Makefile found under the project root is intended to simply your life.
-(As any Makefile should.) Currently (21090922) the constituent targets are:
+(As any Makefile should.) Currently (20190922) the constituent targets are:
 
 :all:
   Default target. Simply requires the ``pages`` target.
