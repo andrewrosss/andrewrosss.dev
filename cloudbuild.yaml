@@ -14,8 +14,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['beta', 'run', 'deploy', 'andrewrosss-dev', '--image', 'gcr.io/$PROJECT_ID/andrewross.dev:$TAG_NAME.$SHORT_SHA', '--region', 'us-east1', '--platform', 'managed', '--allow-unauthenticated']
-options:
-    machineType: 'N1_STANDARD_1'
 timeout: 660s
 tags: ['latest', '$TAG_NAME.$SHORT_SHA']
 images: ['gcr.io/$PROJECT_ID/andrewross.dev']
