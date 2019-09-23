@@ -1,3 +1,3 @@
-# Andrew Ross' Personal Website.
+# My Personal Website.
 
-This houses the code used to generate [my personal website.](https://andrewrosss.dev)
+This houses the code used to generate [andrewrosss.dev](https://andrewrosss.dev)
