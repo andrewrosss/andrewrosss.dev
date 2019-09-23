@@ -1,4 +1,5 @@
 PORT ?= 5005
+VERSION = $(shell python -c "import andrewrosss_dev; print(andrewrosss_dev.__version__)")
 
 .PHONY: docs pages dist clean
 
@@ -18,6 +19,9 @@ dist:
 
 upload:
 	@python3 -m twine upload dist/*
+
+version:
+	@echo $(VERSION)
 
 clean:
 	@pushd docs && make clean && popd

@@ -87,7 +87,7 @@ html_theme_options = {
     "globaltoc_depth": 3,
     "globaltoc_collapse": True,
     "globaltoc_includehidden": True,
-    "nav_title": f"{project} {version}",
+    "nav_title": f"{project} {release}",
     "master_doc": False,
     "nav_links": [
         {"href": "index", "internal": True, "title": "Home"},
