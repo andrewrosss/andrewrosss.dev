@@ -6,13 +6,20 @@ VERSION = $(shell python -c "import andrewrosss_dev; print(andrewrosss_dev.__ver
 all: pages
 
 docs:
-	@pushd docs && make html && popd
+	@bash -c "pushd docs && make html && popd"
 
 pages: docs
-	@rsync -avz --delete docs/build/html/ andrewrosss_dev/static/pages
+	@mkdir -p andrewrosss_dev/static/pages
+	@bash -c "rsync -avz --delete docs/build/html/ andrewrosss_dev/static/pages"
+
+local-docker-image:
+	@docker build -t andrewrosss.dev:$(shell make version | tr + -) .
 
 dev-server:
 	gunicorn --reload --bind :$(PORT) --workers 1 --threads 2 pages:app
+
+prod-server:
+	gunicorn --bind :$(PORT) --workers 1 --threads 8 pages:app
 
 dist:
 	@python setup.py sdist bdist_wheel
