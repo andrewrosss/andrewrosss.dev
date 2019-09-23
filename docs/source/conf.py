@@ -13,6 +13,7 @@
 import os
 import sys
 import sphinx_material
+
 sys.path.insert(0, os.path.abspath("."))
 sys.path.insert(0, os.path.abspath("../.."))
 import andrewrosss_dev
@@ -26,6 +27,7 @@ author = "Andrew Ross"
 
 # The full release, including alpha/beta/rc tags
 release = andrewrosss_dev.__version__
+version = release.split("+")[0]
 
 
 # -- General configuration ---------------------------------------------------
@@ -69,7 +71,9 @@ html_static_path = ["_static"]
 
 html_logo = "_static/images/laptop_icon.svg"
 
-html_sidebars = {"**": ["globaltoc.html", "localtoc.html", "searchbox.html"]}
+html_sidebars = {
+    "**": ["globaltoc.html", "localtoc.html", "searchbox.html", "versions.html"]
+}
 
 html_title = project
 html_short_title = project
@@ -77,13 +81,13 @@ html_short_title = project
 html_theme_options = {
     "color_primary": "teal",
     "color_accent": "teal",
-    # 'base_url': base_url,
+    # 'base_url': https://andrewrosss.dev,
     "repo_url": "https://github.com/andrewrosss/andrewrosss.dev",
     "repo_name": "andrewrosss.dev",
     "globaltoc_depth": 3,
     "globaltoc_collapse": True,
     "globaltoc_includehidden": True,
-    "nav_title": f"{project} {release}".format(release),
+    "nav_title": f"{project} {version}",
     "master_doc": False,
     "nav_links": [
         {"href": "index", "internal": True, "title": "Home"},
