@@ -10,7 +10,7 @@ docs:
 pages: docs
 	@rsync -avz --delete docs/build/html/ andrewrosss_dev/static/pages
 
-local-server: pages
+local-server:
 	gunicorn --bind :$(PORT) --workers 1 --threads 8 pages:app
 
 dist:
