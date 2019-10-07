@@ -6,9 +6,10 @@
 Andrew Ross
 ===========
 
-
-Subsection 1
-------------
+.. image:: _static/images/head_shot.jpg
+   :width: 400 px
+   :scale: 50 %
+   :align: center
 
 Proident nostrud quis labore veniam ea in. Consectetur in tempor nulla laboris do reprehenderit aliquip qui nulla pariatur. Ullamco magna excepteur commodo excepteur dolore. Veniam aliqua amet laboris anim aliquip mollit labore labore nostrud ut qui sunt consequat nisi. Lorem labore fugiat excepteur cillum. Aute nisi quis duis duis aliquip commodo.
 
