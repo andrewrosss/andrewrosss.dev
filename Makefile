@@ -33,3 +33,6 @@ version:
 clean:
 	@pushd docs && make clean && popd
 	@rm -rf andrewrosss_dev/static/pages/*
+
+requirements:   ## Run 'pip freeze --all --exclude-editable'
+	@pip freeze --all --exclude-editable
