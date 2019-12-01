@@ -79,8 +79,8 @@ html_title = project
 html_short_title = project
 
 html_theme_options = {
-    "color_primary": "teal",
-    "color_accent": "teal",
+    "color_primary": "deep-purple",
+    "color_accent": "deep-purple",
     # 'base_url': https://andrewrosss.dev,
     "repo_url": "https://github.com/andrewrosss/andrewrosss.dev",
     "repo_name": "andrewrosss.dev",
