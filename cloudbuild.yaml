@@ -1,8 +1,7 @@
 steps:
-  # Clone source code
+  # create a tag in the build environment so that versioneer can find it
   - name: "gcr.io/cloud-builders/git"
-    args: ["clone", "https://github.com/andrewrosss/andrewrosss.dev.git"]
-    timeout: 600s
+    args: ["tag", "$TAG_NAME"]
   # Build the container image
   - name: "gcr.io/cloud-builders/docker"
     args:
